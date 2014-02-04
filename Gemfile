@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem "foundation-rails", github: "codefellows/foundation-rails"
+gem 'devise'
 
 
 group :development do

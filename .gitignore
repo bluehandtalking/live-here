@@ -16,3 +16,4 @@
 /tmp
 coverage/.resultset.json
 coverage/index.html
+.zeus.sock
