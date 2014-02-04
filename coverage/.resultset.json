@@ -1,7 +1,19 @@
 {
   "Unit Tests": {
     "coverage": {
+<<<<<<< HEAD
       "/Users/amandaspiegel/live-here/app/helpers/answers_helper.rb": [
+=======
+      "/home/jet/Code_Fellows/project/live-here/app/models/admin.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/jet/Code_Fellows/project/live-here/app/helpers/answers_helper.rb": [
+>>>>>>> ae182f15bf8d557cd03c262c9732d4d404a98f74
         1,
         null
       ],
@@ -28,6 +40,7 @@
       ],
       "/Users/amandaspiegel/live-here/app/models/question_set.rb": [
         1,
+<<<<<<< HEAD
         null
       ],
       "/Users/amandaspiegel/live-here/app/models/quiz.rb": [
@@ -271,5 +284,17 @@
       ]
     },
     "timestamp": 1391548703
+=======
+        1,
+        null
+      ],
+      "/home/jet/Code_Fellows/project/live-here/app/models/answer.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1391551225
+>>>>>>> ae182f15bf8d557cd03c262c9732d4d404a98f74
   }
 }

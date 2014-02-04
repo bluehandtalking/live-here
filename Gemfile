@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem "foundation-rails", github: "codefellows/foundation-rails"
+gem 'devise'
 
 
 group :development do
@@ -25,6 +26,7 @@ group :test do
   gem 'turn'
   gem 'simplecov', :require => false
   gem 'debugger', "1.6.5"
+  gem 'pry-rescue'
   gem 'pry-debugger', github: 'nixme/pry-debugger'
 
   # gem 'guard'
