@@ -1,6 +1,14 @@
 {
   "Unit Tests": {
     "coverage": {
+      "/Users/amandaspiegel/live-here/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
       "/Users/amandaspiegel/live-here/app/models/admin.rb": [
         1,
         null,
@@ -44,6 +52,6 @@
         null
       ]
     },
-    "timestamp": 1391552736
+    "timestamp": 1391555950
   }
 }

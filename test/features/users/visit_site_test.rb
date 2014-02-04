@@ -15,7 +15,7 @@ feature "Mover who wishes to make intelligent decision regarding their move visi
     #click_on "A"
   #end
   #scenario
-#end
+end
 
 # class Users::VisitSiteTest < Capybara::Rails::TestCase
 #   test "sanity" do

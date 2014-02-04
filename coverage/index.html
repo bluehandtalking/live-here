@@ -14,19 +14,7 @@
       <img src="./assets/0.8.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-<<<<<<< HEAD
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-02-04T14:25:36-08:00">2014-02-04T14:25:36-08:00</abbr></div>
-=======
-<<<<<<< HEAD
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-02-04T14:24:23-08:00">2014-02-04T14:24:23-08:00</abbr></div>
-=======
-<<<<<<< HEAD
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-02-04T13:18:23-08:00">2014-02-04T13:18:23-08:00</abbr></div>
-=======
-      <div class="timestamp">Generated <abbr class="timeago" title="2014-02-04T14:00:25-08:00">2014-02-04T14:00:25-08:00</abbr></div>
->>>>>>> ae182f15bf8d557cd03c262c9732d4d404a98f74
->>>>>>> 4f2367e9b2ca60366f0648552dd66559fe616223
->>>>>>> c36d73b7fc453c7a7767a6329187ee0a736911a9
+      <div class="timestamp">Generated <abbr class="timeago" title="2014-02-04T15:19:10-08:00">2014-02-04T15:19:10-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -43,9 +31,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>9</b> files in total.
-    <b>12</b> relevant lines. 
-    <span class="green"><b>12</b> lines covered</span> and
+    <b>10</b> files in total.
+    <b>14</b> relevant lines. 
+    <span class="green"><b>14</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,12 +51,7 @@
     <tbody>
       
       <tr>
-<<<<<<< HEAD
         <td class="strong"><a href="#84dd34386683b16d0149558a0d5ee5c25a2eae8f" class="src_link" title="app/helpers/answers_helper.rb">app/helpers/answers_helper.rb</a></td>
-=======
-        <td class="strong"><a href="#d54a345b7922f283a111b1bc3c4225bfd1701b15" class="src_link" title="app/helpers/answers_helper.rb">app/helpers/answers_helper.rb</a></td>
->>>>>>> ae182f15bf8d557cd03c262c9732d4d404a98f74
->>>>>>> c36d73b7fc453c7a7767a6329187ee0a736911a9
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>1</td>
@@ -157,6 +140,16 @@
         <td>1.0</td>
       </tr>
       
+      <tr>
+        <td class="strong"><a href="#3e6621126c3aa8918a5122f06e5135ad65bcff2b" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
     </tbody>
   </table>
 </div>
@@ -213,9 +206,9 @@
   </h2>
   <a name="Models"></a>
   <div>
-    <b>4</b> files in total.
-    <b>7</b> relevant lines. 
-    <span class="green"><b>7</b> lines covered</span> and
+    <b>5</b> files in total.
+    <b>9</b> relevant lines. 
+    <span class="green"><b>9</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -268,6 +261,16 @@
         <td>2</td>
         <td>1</td>
         <td>1</td>
+        <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#3e6621126c3aa8918a5122f06e5135ad65bcff2b" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>6</td>
+        <td>2</td>
+        <td>2</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -745,6 +748,60 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="3e6621126c3aa8918a5122f06e5135ad65bcff2b">
+  <div class="header">
+    <h3>app/models/user.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>2</b> relevant lines. 
+      <span class="green"><b>2</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class User &lt; ActiveRecord::Base</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby">  # Include default devise modules. Others available are:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # :confirmable, :lockable, :timeoutable and :omniauthable</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  devise :database_authenticatable, :registerable,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">         :recoverable, :rememberable, :trackable, :validatable</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
           
           
           <code class="ruby">end</code>
