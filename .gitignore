@@ -17,3 +17,5 @@
 coverage/.resultset.json
 coverage/index.html
 .zeus.sock
+coverage/.resultset.json
+coverage/index.html
