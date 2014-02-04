@@ -5,6 +5,7 @@ feature "Mover who wishes to make intelligent decision regarding their move visi
     visit root_path
   end
   scenario "Mover clicks link to start the moving decision quiz" do
+    visit root_path
     click_link "Start the Quiz"
   end
 end
