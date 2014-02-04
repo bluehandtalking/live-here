@@ -1,40 +1,40 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/home/jet/Code_Fellows/project/live-here/app/helpers/answers_helper.rb": [
+      "/Users/amandaspiegel/live-here/app/helpers/answers_helper.rb": [
         1,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/helpers/application_helper.rb": [
+      "/Users/amandaspiegel/live-here/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/helpers/question_sets_helper.rb": [
+      "/Users/amandaspiegel/live-here/app/helpers/question_sets_helper.rb": [
         1,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/helpers/quizzes_helper.rb": [
+      "/Users/amandaspiegel/live-here/app/helpers/quizzes_helper.rb": [
         1,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/helpers/welcome_helper.rb": [
+      "/Users/amandaspiegel/live-here/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/models/quiz.rb": [
-        1,
-        null
-      ],
-      "/home/jet/Code_Fellows/project/live-here/app/models/question_set.rb": [
-        1,
-        null
-      ],
-      "/home/jet/Code_Fellows/project/live-here/app/models/answer.rb": [
+      "/Users/amandaspiegel/live-here/app/models/answer.rb": [
         1,
         1,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/controllers/answers_controller.rb": [
+      "/Users/amandaspiegel/live-here/app/models/question_set.rb": [
+        1,
+        null
+      ],
+      "/Users/amandaspiegel/live-here/app/models/quiz.rb": [
+        1,
+        null
+      ],
+      "/Users/amandaspiegel/live-here/app/controllers/answers_controller.rb": [
         1,
         1,
         null,
@@ -61,12 +61,12 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -77,10 +77,10 @@
         null,
         null,
         1,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -91,37 +91,33 @@
         null,
         null,
         1,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
         1,
-        null,
-        1,
-        4,
-        null,
-        null,
         null,
         1,
         2,
+        null,
+        null,
+        null,
+        1,
+        0,
         null,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/controllers/application_controller.rb": [
+      "/Users/amandaspiegel/live-here/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/controllers/welcome_controller.rb": [
-        1,
-        null
-      ],
-      "/home/jet/Code_Fellows/project/live-here/app/controllers/question_sets_controller.rb": [
+      "/Users/amandaspiegel/live-here/app/controllers/question_sets_controller.rb": [
         1,
         1,
         null,
@@ -148,12 +144,12 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -164,10 +160,10 @@
         null,
         null,
         1,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -178,26 +174,26 @@
         null,
         null,
         1,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
         1,
-        null,
-        1,
-        4,
-        null,
-        null,
         null,
         1,
         2,
+        null,
+        null,
+        null,
+        1,
+        0,
         null,
         null
       ],
-      "/home/jet/Code_Fellows/project/live-here/app/controllers/quizzes_controller.rb": [
+      "/Users/amandaspiegel/live-here/app/controllers/quizzes_controller.rb": [
         1,
         1,
         null,
@@ -224,12 +220,12 @@
         null,
         null,
         1,
-        1,
+        0,
         null,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -240,10 +236,10 @@
         null,
         null,
         1,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -254,26 +250,26 @@
         null,
         null,
         1,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         null,
         null,
         1,
-        null,
-        1,
-        4,
-        null,
-        null,
         null,
         1,
         2,
+        null,
+        null,
+        null,
+        1,
+        0,
         null,
         null
       ]
     },
-    "timestamp": 1391535617
+    "timestamp": 1391548703
   }
 }
