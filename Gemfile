@@ -24,7 +24,7 @@ group :test do
   gem 'minitest-rails-capybara'
   gem 'capybara-webkit'
   gem 'turn'
-  gem 'simplecov', :require => false
+  # gem 'simplecov', :require => false
   gem 'debugger', "1.6.5"
   gem 'pry-rescue'
   gem 'pry-debugger', github: 'nixme/pry-debugger'

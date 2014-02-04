@@ -14,8 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-coverage/.resultset.json
 coverage/index.html
 .zeus.sock
-coverage/.resultset.json
+coverage/
 coverage/index.html
