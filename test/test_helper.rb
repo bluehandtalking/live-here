@@ -24,11 +24,20 @@ class ActiveSupport::TestCase
   # Add more helper methods to be used by all tests here...
 end
 
+class ActiveSupport::TestCase
+  include Devise::TestHelpers
+end
+
 
 class FeatureTest < MiniTest::Spec
   include Rails.application.routes.url_helpers
   include Capybara::DSL
+  include Devise::TestHelpers
+
   register_spec_type(/integration$/, self)
 end
 
+
 Turn.config.format = :outline
+
+
