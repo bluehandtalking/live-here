@@ -15,7 +15,6 @@ Capybara.default_driver = :webkit
 
 
 class ActiveSupport::TestCase
-  ActiveRecord::Migration.check_pending!
   include Devise::TestHelpers
   fixtures :all
 end
