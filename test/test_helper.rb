@@ -1,5 +1,3 @@
-#require 'simplecov'
-#SimpleCov.start 'rails'
 
 ENV["RAILS_ENV"] = "test"
 require File.expand_path("../../config/environment", __FILE__)
@@ -10,24 +8,22 @@ require "capybara-webkit"
 require "turn/autorun"
 require 'capybara/dsl'
 
+#require 'simplecov'
+#SimpleCov.start 'rails'
+
 Capybara.default_driver = :webkit
 
-
-
 class ActiveSupport::TestCase
-  include Devise::TestHelpers
+  # include Devise::TestHelpers
   fixtures :all
 end
-
 
 class FeatureTest < MiniTest::Spec
   include Rails.application.routes.url_helpers
   include Capybara::DSL
-  include Devise::TestHelpers
-
+ # include Devise::TestHelpers
   register_spec_type(/integration$/, self)
 end
-
 
 Turn.config.format = :outline
 

@@ -1,7 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  topic: MyString
+  topic: What is the value of friendship?
+  id: 1
 
 two:
-  topic: MyString
+  topic: How do you grow marigolds on the moon?
+  id:  2
