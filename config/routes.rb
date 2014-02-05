@@ -1,12 +1,14 @@
 LiveHere::Application.routes.draw do
-  devise_for :users
-  devise_for :admins
   resources :answers
 
-  resources :question_sets
+  resources :questions
 
-  resources :quizzes
+  resources :topics
 
+  resources :surveys
+
+  devise_for :users
+  devise_for :admins
   root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140204223649) do
+ActiveRecord::Schema.define(version: 20140205154319) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -32,27 +32,37 @@ ActiveRecord::Schema.define(version: 20140204223649) do
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
 
   create_table "answers", force: true do |t|
-    t.string   "answer"
-    t.integer  "question_set_id"
+    t.string   "result"
+    t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "answers", ["question_set_id"], name: "index_answers_on_question_set_id"
+  add_index "answers", ["question_id"], name: "index_answers_on_question_id"
 
-  create_table "question_sets", force: true do |t|
+  create_table "questions", force: true do |t|
+    t.string   "query"
+    t.integer  "topic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "questions", ["topic_id"], name: "index_questions_on_topic_id"
+
+  create_table "surveys", force: true do |t|
+    t.string   "topic"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "topics", force: true do |t|
     t.string   "name"
+    t.integer  "survey_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "question"
   end
 
-  create_table "quizzes", force: true do |t|
-    t.string   "name"
-    t.string   "type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+  add_index "topics", ["survey_id"], name: "index_topics_on_survey_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
