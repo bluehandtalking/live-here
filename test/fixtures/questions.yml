@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  query: MyString
+  description: MyText
   topic_id: 
 
 two:
-  query: MyString
+  description: MyText
   topic_id: 

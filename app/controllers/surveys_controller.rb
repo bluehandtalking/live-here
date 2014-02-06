@@ -1,5 +1,6 @@
 class SurveysController < ApplicationController
   before_action :set_survey, only: [:show, :edit, :update, :destroy]
+  before_filter :authenticate_user!, :except => [:show, :index] 
 
   # GET /surveys
   # GET /surveys.json
@@ -15,6 +16,7 @@ class SurveysController < ApplicationController
   # GET /surveys/new
   def new
     @survey = Survey.new
+    @topic = @survey.topic.build
   end
 
   # GET /surveys/1/edit

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140205232551) do
+ActiveRecord::Schema.define(version: 20140206180257) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 20140205232551) do
   end
 
   create_table "questions", force: true do |t|
-    t.string   "query"
+    t.text     "description"
     t.integer  "topic_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -63,7 +63,7 @@ ActiveRecord::Schema.define(version: 20140205232551) do
   end
 
   create_table "topics", force: true do |t|
-    t.string   "name"
+    t.text     "description"
     t.integer  "survey_id"
     t.datetime "created_at"
     t.datetime "updated_at"

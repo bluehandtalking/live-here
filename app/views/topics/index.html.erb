@@ -3,7 +3,7 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Description</th>
       <th>Survey</th>
       <th></th>
       <th></th>
@@ -14,7 +14,7 @@
   <tbody>
     <% @topics.each do |topic| %>
       <tr>
-        <td><%= topic.name %></td>
+        <td><%= topic.description %></td>
         <td><%= topic.survey %></td>
         <td><%= link_to 'Show', topic %></td>
         <td><%= link_to 'Edit', edit_topic_path(topic) %></td>

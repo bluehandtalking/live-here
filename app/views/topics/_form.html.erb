@@ -12,12 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :survey_id %><br>
     <%= f.text_field :survey_id %>
+  </div>
+  <div class="field">
+    <%= fields_for :questions do |builder|  %>
+      <p>
+      <%= builder.label :description, "Do you like your weather..."  %>  
+      </p> 
+
+      
+    <% end %>
   </div>
   <div class="actions">
     <%= f.submit %>
