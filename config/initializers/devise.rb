@@ -250,5 +250,8 @@ Devise.setup do |config|
   #
   # When using omniauth, Devise cannot automatically set Omniauth path,
   # so you need to do it manually. For the users scope, it would be:
+  #
+  # jet add scoped views for Users and Admins
+  config.scoped_views = true 
   # config.omniauth_path_prefix = '/my_engine/users/auth'
 end
