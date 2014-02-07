@@ -16,7 +16,7 @@ group :development do
   gem 'better_errors'
   gem 'meta_request', '0.2.1'
   gem 'pry-rails'
-  gem 'seed_dump', github: "rroblak/seed_dump" 
+  gem 'seed_dump', github: "rroblak/seed_dump"
 end
 
 
@@ -25,6 +25,7 @@ group :test do
   gem 'minitest-rails-capybara'
   gem 'capybara-webkit'
   gem 'turn'
+  gem 'launchy'
   # gem 'simplecov', :require => false
   gem 'debugger', "1.6.5"
   gem 'pry-rescue'

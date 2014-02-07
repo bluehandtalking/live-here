@@ -3,7 +3,7 @@ require "test_helper"
 feature "Mover who wishes to make intelligent decision regarding their move visits our site" do
   scenario "Mover visits entry portal" do
     visit root_path
-    page.must_include "Contact Us"
+    assert page.has_content?("Live")
   end
   scenario "Mover clicks link to start the moving decision quiz" do
     visit root_path
@@ -14,7 +14,7 @@ feature "Mover who wishes to make intelligent decision regarding their move visi
     #click_link "Start the Quiz"
     #topic.each select "A"
     #click_button "Tell Me Where to Move!"
-    #page.must_include "Type A"
+    #assert page.should have_content "Type A"
   #end
 end
 
@@ -22,19 +22,16 @@ end
   #scenario "mover visits about us page" do
     #visit root_path
     #click "About Us"
-    #page.must_include "Who We Are"
+    #assert page.should have_content "Who We Are"
   #end
 #end
 
 feature "Mover wants to have an account with us" do
   scenario "mover signs up" do
     visit root_path
-    click_link "Sign Up"
-    page.must_include "Password Confirmation"
-  end
-  scenario "mover signs in" do
-   sign_in(:user)
-   page.must_include "Signed"
+    click_on "Sign up"
+    save_and_open_page
+    assert page.has_content?("confirmation")
  end
 end
 
@@ -46,6 +43,6 @@ end
    # click_link "Browse Cities"
     #page.must_include "Seattle"
   #end
-end
+#end
 
 
