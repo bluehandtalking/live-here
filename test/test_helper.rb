@@ -27,11 +27,18 @@ end
 
 def sign_in
   visit root_path
-  click_link "Sign In"
-  page.must_include "Remember me"
+  click_on "Sign in"
+  assert page.has_content?("Remember me")
   fill_in "Email", with: users(:user).email
   fill_in "Password", with: users(:user).password
-  click_button "Sign In"
+  click_button "Sign in"
+end
+
+def sign_in_admin
+  visit new_admin_session_path
+  fill_in "Email", with: admins(:ed).email
+  fill_in "Password", with: admins(:ed).password
+  click_button "Sign in"
 end
 Turn.config.format = :outline
 

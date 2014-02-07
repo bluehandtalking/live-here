@@ -10,4 +10,7 @@ user:
 user2:
   email: joe@joe.joe
   encrypted_password: <%= User.new.send(:password_digest, 'password') %>
-#  column: value
+ed:
+  email: ed@somewhere.com
+  encrypted_password: <%= User.new.send(:password_digest, 'secretpwd49') %>
+  admin: true
