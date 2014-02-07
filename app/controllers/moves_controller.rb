@@ -69,6 +69,6 @@ class MovesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def move_params
-      params.require(:move).permit(:title, :moderate, :hot, :cold, :bunny, :cautious, :badass, :poor, :solid, :bling, :hike, :theater, :lecture)
+      params.require(:move).permit(:weather, :budget, :safety, :recreation)
     end
 end

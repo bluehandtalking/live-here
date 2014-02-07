@@ -18,7 +18,7 @@ class MovesControllerTest < ActionController::TestCase
 
   test "should create move" do
     assert_difference('Move.count') do
-      post :create, move: { badass: @move.badass, bling: @move.bling, bunny: @move.bunny, cautious: @move.cautious, cold: @move.cold, hike: @move.hike, hot: @move.hot, lecture: @move.lecture, moderate: @move.moderate, poor: @move.poor, solid: @move.solid, theater: @move.theater, title: @move.title }
+      post :create, move: { budget: @move.budget, recreation: @move.recreation, safety: @move.safety, weather: @move.weather }
     end
 
     assert_redirected_to move_path(assigns(:move))
@@ -35,7 +35,7 @@ class MovesControllerTest < ActionController::TestCase
   end
 
   test "should update move" do
-    patch :update, id: @move, move: { badass: @move.badass, bling: @move.bling, bunny: @move.bunny, cautious: @move.cautious, cold: @move.cold, hike: @move.hike, hot: @move.hot, lecture: @move.lecture, moderate: @move.moderate, poor: @move.poor, solid: @move.solid, theater: @move.theater, title: @move.title }
+    patch :update, id: @move, move: { budget: @move.budget, recreation: @move.recreation, safety: @move.safety, weather: @move.weather }
     assert_redirected_to move_path(assigns(:move))
   end
 

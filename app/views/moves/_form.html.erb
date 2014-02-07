@@ -10,60 +10,62 @@
       </ul>
     </div>
   <% end %>
+<div class="jet-center">
+<h2 class="survey">Do You Like Your Weather...</h2>
+  <div class="field">
+    <%= f.label :moderate_weather%><br>
+    <%= f.radio_button( :weather, '100'  ) %>
+  </div>
+  <div class="field">
+    <%= f.label :hot_weather%><br>
+    <%= f.radio_button( :weather, '80'  ) %>
+  </div>
+  <div class="field">
+    <%= f.label :cold_weather %><br>
+    <%= f.radio_button( :weather, '40'  ) %>
+  </div>
+  <h2 class="survey"> What's in Your Wallet? </h2>
+  <div class="field">
+    <%= f.label :down_so_long_it_looks_like_up_to_me %><br>
+    <%= f.radio_button( :budget, '100' ) %>
+  </div>
+  <div class="field">
+    <%= f.label :on_a_budget_but_do_ok_for_myself%><br>
+    <%= f.radio_button( :budget, '60' ) %>
+  </div>
+  <div class="field">
+    <%= f.label :bling_bling_mothafucka_im_on_a_boat%><br>
+    <%= f.radio_button( :budget, '10' ) %>
+  </div>
+  <h2 class="survey">How Edgy Are You When it Comes to Safety</h2>
+  <div class="field">
+    <%= f.label :i_fear_dust_bunnies %><br>
+    <%= f.radio_button( :safety, '100' ) %>
+  </div>';'
+  <div class="field">
+    <%= f.label "I’m safety-conscious, but not paranoid like the first guy." %><br>
+    <%= f.radio_button( :safety, '60' ) %>
+  </div>
+  <div class="field">
+    <%= f.label "Don’t care, I’m a badass." %><br>
+    <%= f.radio_button( :safety, '10' ) %>
+  </div>
+  <h2 class="survey">Where would you rather be on any given Saturday?</h2>
+  <div class="field">
+    <%= f.label "Taking an awesome hike in the wilderness" %><br>
+    <%= f.radio_button( :recreation, '100' ) %>
+  </div>
+  <div class="field">
+    <%= f.label "Attending a lecture, seminar, talk, or class." %><br>
+    <%= f.radio_button( :recreation, '50' ) %>
+  </div>
+  <div class="field">
+    <%= f.label "Enjoying the theater or music scene." %><br>
+    <%= f.radio_button( :recreation, '80' ) %>
+  </div>
 
-  <div class="">
-    <%= f.label :title %><br>
-    <%= f.number_field :title %>
-  </div>
-  <div class="">
-    <%= f.label :moderate %><br>
-    <%= f.radio_button :moderate, :value '24' %>
-  </div>
-  <div class="">
-    <%= f.label :hot %><br>
-    <%= f.number_field :hot %>
-  </div>
-  <div class="">
-    <%= f.label :cold %><br>
-    <%= f.number_field :cold %>
-  </div>
-  <div class="">
-    <%= f.label :bunny %><br>
-    <%= f.number_field :bunny %>
-  </div>
-  <div class="">
-    <%= f.label :cautious %><br>
-    <%= f.number_field :cautious %>
-  </div>
-  <div class="">
-    <%= f.label :badass %><br>
-    <%= f.number_field :badass %>
-  </div>
-  <div class="">
-    <%= f.label :poor %><br>
-    <%= f.number_field :poor %>
-  </div>
-  <div class="">
-    <%= f.label :solid %><br>
-    <%= f.number_ :solid %>
-  </div>
-  <div class="">
-    <%= f.label :bling %><br>
-    <%= f.number_field :bling %>
-  </div>
-  <div class="">
-    <%= f.label :hike %><br>
-    <%= f.number_field :hike %>
-  </div>
-  <div class="">
-    <%= f.label :theater %><br>
-    <%= f.number_field :theater %>
-  </div>
-  <div class="">
-    <%= f.label :lecture %><br>
-    <%= f.number_field :lecture %>
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
 <% end %>
