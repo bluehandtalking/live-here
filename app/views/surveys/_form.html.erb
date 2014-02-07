@@ -12,9 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :topic %><br>
-    <%= f.text_field :topic %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name%>
   </div>
+ <div class="field">
+    <%= f.fields_for :topics do |subject| %>
+      <%= render "topic_fields", :f => subject %>
+    <% end %>
+ </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

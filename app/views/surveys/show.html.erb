@@ -1,9 +1,12 @@
 <p id="notice"><%= notice %></p>
-
 <p>
-  <strong>Topic:</strong>
-  <%= @survey.topic %>
-</p>
+<h1><%= @survey.name  %></h1>
 
-<%= link_to 'Edit', edit_survey_path(@survey) %> |
+  <h2>
+    <%= @topics.each do |show| %>
+      <%= show.description %><br />
+    <% end %>
+  </h2>
+  </p>
+<%= link_to 'Edit', edit_survey_path(@survey) %> 
 <%= link_to 'Back', surveys_path %>

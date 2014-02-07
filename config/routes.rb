@@ -1,9 +1,9 @@
 LiveHere::Application.routes.draw do
+  resources :moves
+
   resources :topics
 
   resources :cities
-
-  resources :answers
 
   resources :surveys
 

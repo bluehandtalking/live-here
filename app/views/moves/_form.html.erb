@@ -1,0 +1,69 @@
+<%= form_for(@move) do |f| %>
+  <% if @move.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@move.errors.count, "error") %> prohibited this move from being saved:</h2>
+
+      <ul>
+      <% @move.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="">
+    <%= f.label :title %><br>
+    <%= f.number_field :title %>
+  </div>
+  <div class="">
+    <%= f.label :moderate %><br>
+    <%= f.radio_button :moderate, :value '24' %>
+  </div>
+  <div class="">
+    <%= f.label :hot %><br>
+    <%= f.number_field :hot %>
+  </div>
+  <div class="">
+    <%= f.label :cold %><br>
+    <%= f.number_field :cold %>
+  </div>
+  <div class="">
+    <%= f.label :bunny %><br>
+    <%= f.number_field :bunny %>
+  </div>
+  <div class="">
+    <%= f.label :cautious %><br>
+    <%= f.number_field :cautious %>
+  </div>
+  <div class="">
+    <%= f.label :badass %><br>
+    <%= f.number_field :badass %>
+  </div>
+  <div class="">
+    <%= f.label :poor %><br>
+    <%= f.number_field :poor %>
+  </div>
+  <div class="">
+    <%= f.label :solid %><br>
+    <%= f.number_ :solid %>
+  </div>
+  <div class="">
+    <%= f.label :bling %><br>
+    <%= f.number_field :bling %>
+  </div>
+  <div class="">
+    <%= f.label :hike %><br>
+    <%= f.number_field :hike %>
+  </div>
+  <div class="">
+    <%= f.label :theater %><br>
+    <%= f.number_field :theater %>
+  </div>
+  <div class="">
+    <%= f.label :lecture %><br>
+    <%= f.number_field :lecture %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140206180257) do
+ActiveRecord::Schema.define(version: 20140207005008) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -32,7 +32,7 @@ ActiveRecord::Schema.define(version: 20140206180257) do
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
 
   create_table "answers", force: true do |t|
-    t.string   "result"
+    t.string   "content"
     t.integer  "question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -47,6 +47,24 @@ ActiveRecord::Schema.define(version: 20140206180257) do
     t.datetime "updated_at"
   end
 
+  create_table "moves", force: true do |t|
+    t.integer  "title"
+    t.integer  "moderate"
+    t.integer  "hot"
+    t.integer  "cold"
+    t.integer  "bunny"
+    t.integer  "cautious"
+    t.integer  "badass"
+    t.integer  "poor"
+    t.integer  "solid"
+    t.integer  "bling"
+    t.integer  "hike"
+    t.integer  "theater"
+    t.integer  "lecture"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "questions", force: true do |t|
     t.text     "description"
     t.integer  "topic_id"
@@ -57,7 +75,7 @@ ActiveRecord::Schema.define(version: 20140206180257) do
   add_index "questions", ["topic_id"], name: "index_questions_on_topic_id"
 
   create_table "surveys", force: true do |t|
-    t.string   "topic"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

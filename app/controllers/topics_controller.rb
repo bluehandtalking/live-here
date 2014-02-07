@@ -10,11 +10,13 @@ class TopicsController < ApplicationController
   # GET /topics/1
   # GET /topics/1.json
   def show
+    @questions = @topic.questions.find(:all)
   end
 
   # GET /topics/new
   def new
     @topic = Topic.new
+    5.times {@topic.questions.build}
   end
 
   # GET /topics/1/edit
@@ -69,6 +71,6 @@ class TopicsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def topic_params
-      params.require(:topic).permit(:description, :survey_id)
+      params.require(:topic).permit(:description, questions_attributes: [:description])
     end
 end
