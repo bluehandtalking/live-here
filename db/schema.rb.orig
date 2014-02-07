@@ -60,6 +60,10 @@ ActiveRecord::Schema.define(version: 20140207210329) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "description"
+<<<<<<< HEAD
+    t.binary   "image"
+=======
+>>>>>>> e4353e1122d674c53801cb6ed60e39b9cbde4793
   end
 
   create_table "moves", force: true do |t|

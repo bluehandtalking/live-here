@@ -6,10 +6,15 @@
 </p>
 
 <p>
-  <strong>Rating:</strong>
-  <%= @city.rating %>
+<%= @city.description %>
 </p>
+<<<<<<< HEAD
+=======
 
 <p>
+  <strong>About</strong><br>
+  <%= @city.description %><br>
+  </p>
+>>>>>>> e4353e1122d674c53801cb6ed60e39b9cbde4793
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>
