@@ -1,24 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Weather:</strong>
-  <%= @move.weather %>
-</p>
+<h1>Here are your Best Shots at Happiness!</h1>
 
-<p>
-  <strong>Budget:</strong>
-  <%= @move.budget %>
-</p>
-
-<p>
-  <strong>Safety:</strong>
-  <%= @move.safety %>
-</p>
-
-<p>
-  <strong>Recreation:</strong>
-  <%= @move.recreation %>
-</p>
-
+<h2>
+  <%= @cities.each do |city| %>
+    city.name
+  <% end %>
+</h2>
 <%= link_to 'Edit', edit_move_path(@move) %> |
 <%= link_to 'Back', moves_path %>

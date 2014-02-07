@@ -25,6 +25,16 @@ class MovesController < ApplicationController
   # POST /moves.json
   def create
     @move = Move.new(move_params)
+    points = @move.weather + @move.budget + @move.safety + @move.recreation
+    star = "C"
+    if points >= 27
+        star = "A"
+    elsif points >= 18
+        star = "B"
+    end
+    
+    @cities =  @move.cities.build
+    @cities = City.where( rating: "C" )
 
     respond_to do |format|
       if @move.save
