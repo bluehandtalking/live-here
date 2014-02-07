@@ -3,7 +3,7 @@ require "test_helper"
 feature "Mover who wishes to make intelligent decision regarding their move visits our site" do
   scenario "Mover visits entry portal" do
     visit root_path
-    assert page.has_content?("Live")
+    page.must_have_content("Live")
   end
   scenario "Mover clicks link to start the moving decision quiz" do
     visit root_path
@@ -26,14 +26,14 @@ end
   #end
 #end
 
-feature "Mover wants to have an account with us" do
-  scenario "mover signs up" do
-    visit root_path
-    click_on "Sign up"
-    save_and_open_page
-    assert page.has_content?("confirmation")
- end
-end
+# feature "Mover wants to have an account with us" do
+#   scenario "mover signs up" do
+#     visit root_path
+#     click_on "Sign up"
+#     save_and_open_page
+#     assert page.has_content?("confirmation")
+#  end
+# end
 
 
 
