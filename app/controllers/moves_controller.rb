@@ -34,7 +34,7 @@ class MovesController < ApplicationController
     end
     
     @cities =  @move.cities.build
-    @cities = City.where( rating: "C" )
+    @cities = City.where( rating: "#{ star }" )
 
     respond_to do |format|
       if @move.save
