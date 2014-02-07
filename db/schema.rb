@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140207041937) do
+ActiveRecord::Schema.define(version: 20140207084214) do
 
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -39,6 +39,16 @@ ActiveRecord::Schema.define(version: 20140207041937) do
   end
 
   add_index "answers", ["question_id"], name: "index_answers_on_question_id"
+
+  create_table "choices", force: true do |t|
+    t.integer  "move_id"
+    t.integer  "city_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "choices", ["city_id"], name: "index_choices_on_city_id"
+  add_index "choices", ["move_id"], name: "index_choices_on_move_id"
 
   create_table "cities", force: true do |t|
     t.string   "name"

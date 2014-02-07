@@ -15,6 +15,8 @@ class MovesController < ApplicationController
   # GET /moves/new
   def new
     @move = Move.new
+    @move.choices.build
+    @move.cities.build
   end
 
   # GET /moves/1/edit
@@ -31,10 +33,16 @@ class MovesController < ApplicationController
         star = "A"
     elsif points >= 18
         star = "B"
+    else
+      star = "C"
     end
     
-    @cities =  @move.cities.build
-    @cities = City.where( rating: "#{ star }" )
+    @move.cities.build    
+    cities = City.where( rating: "#{ star }" ) 
+    cities.each do |city| 
+      @move.cities << city
+    end
+       # @cities = @move.cities.where( |rating: "#{ star }" )
 
     respond_to do |format|
       if @move.save
@@ -79,6 +87,7 @@ class MovesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def move_params
-      params.require(:move).permit(:weather, :budget, :safety, :recreation)
+      params.require(:move).permit(:weather, :budget, :safety, :recreation,:move_id,:city_id)
     end
 end
+

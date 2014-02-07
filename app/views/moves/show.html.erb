@@ -3,8 +3,8 @@
 <h1>Here are your Best Shots at Happiness!</h1>
 
 <h2>
-  <%= @cities.each do |city| %>
-    city.name
+  <% @move.cities.each do |city| %>
+    <%= city.name%><br />
   <% end %>
 </h2>
 <%= link_to 'Edit', edit_move_path(@move) %> |
