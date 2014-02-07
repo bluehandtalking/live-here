@@ -2,9 +2,9 @@
 
 <h1>Here are your Best Shots at Happiness!</h1>
 
-<h2>
+<h2 class="move-show">
   <% @move.cities.each do |city| %>
-    <%= city.name%><br />
+    <%= link_to "#{ city.name }", city%><br />
   <% end %>
 </h2>
 <%= link_to 'Edit', edit_move_path(@move) %> |
