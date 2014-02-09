@@ -17,46 +17,46 @@
       <div class="large-3 columns top-pic"><%= image_tag("https://live-here.s3.amazonaws.com/cityscape.jpg")%></div>
       <div class="large-3 columns top-pic"><%= image_tag("https://live-here.s3.amazonaws.com/countryside.jpg")%></div>
       <div class="large-3 columns top-pic"><%= image_tag("https://live-here.s3.amazonaws.com/mountain.jpg")%></div>
-  </div> 
+    </div> 
+    <div class="row live-hdr "  >
+      <div class="small-8 small-centered columns " ><p class="banner">Make your Choices for the Perfect Place to Live!</p></div>
+    </div>
     <nav class="top-bar">
       <ul class="title-area">
         <li class="name"><h1><%= link_to "Live Here", root_path %></h1></li> 
-    </ul>
-    <section class="top-bar-section">
+      </ul>
+      <section class="top-bar-section">
         <% if user_signed_in? %>
-      <ul class="auth">
-        <li> Signed in as </li>
-      </ul>
-      <ul>
-        <li><%= current_user.email %></li>
-      </ul>
-      <ul>
+          <ul class="auth">
+          <li> Signed in as </li>
+        </ul>
+        <ul>
+          <li><%= current_user.email %></li>
+        </ul>
+        <ul>
           <li> Not you? </li>
-      </ul>
-      <ul class="auth">
-          <li> <%= link_to 'Sign out', destroy_user_session_path, method: :delete %> </li>
-      </ul>
-        <% else %>
+        </ul>
         <ul class="auth">
+          <li> <%= link_to 'Sign out', destroy_user_session_path, method: :delete %> </li>
+        </ul>
+      <% else %>
+          <ul class="auth">
           <li> <%= link_to 'Sign up', new_user_registration_path %> </li>
         </ul>
         <ul class="auth">
           <li><%= link_to 'Sign in', new_user_session_path  %> </li> 
         </ul>
-        <div class="nav-header"><p class="banner">Make your Choices for the Perfect Place to Live!</p></div>
-        <% end %>
-      <div class="contact-us">
-            <ul class="right contact-us">
-              <li><%= link_to "Contact Us" %></li>
-              </ul>
-      </div>
-    </section>
-  </div>
-</nav>
+      <% end %>
+        <ul class="right auth ">
+          <li><%= link_to "Contact Us" %></li>
+        </ul>
+      </section>
+    </div>
+  </nav>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
-  </body>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
+  <%= javascript_include_tag "application" %>
+</body>
 </html>

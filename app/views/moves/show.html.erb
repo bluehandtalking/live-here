@@ -1,13 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Here are your Best Shots at Happiness!</h1>
-
-<h2 class="move-show">
-  <% @move.cities.each do |city| %>
-    <%= link_to  city.name , city%><br />
-    <%= image_tag  city.image  %><br />
-    <%=  city.description  %><br />
-  <% end %>
-</h2>
-<%= link_to 'Edit', edit_move_path(@move) %> |
-<%= link_to 'Back', moves_path %>
+<div class="row">
+  <div class="small-6 small-centered columns">
+  <h1>Here are your Best Shots at Happiness!</h1>
+  <div class="row">
+    <div class="small-6 small-centered columns">
+        <h2 class="move-show">
+          <% @move.cities.each do |city| %>
+            <%= link_to  city.name , city%><br />
+          <% end %>
+        </h2>
+    </div>
+  </div>
+  </div>
+</div>

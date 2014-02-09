@@ -1,71 +1,73 @@
 <%= form_for(@move) do |f| %>
   <% if @move.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@move.errors.count, "error") %> prohibited this move from being saved:</h2>
+  <div id="error_explanation">
+  <h2><%= pluralize(@move.errors.count, "error") %> prohibited this move from being saved:</h2>
 
-      <ul>
-      <% @move.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
+  <ul>
+    <% @move.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
   <% end %>
-<div class="jet-center">
-<h2 class="survey">Do You Like Your Weather...</h2>
-  <div class="field">
-    <%= f.label :moderate_weather%><br>
-    <%= f.radio_button( :weather, '9'  ) %>
-  </div>
-  <div class="field">
-    <%= f.label :hot_weather%><br>
-    <%= f.radio_button( :weather, '5'  ) %>
-  </div>
-  <div class="field">
-    <%= f.label :cold_weather %><br>
-    <%= f.radio_button( :weather, '3'  ) %>
-  </div>
-  <h2 class="survey"> What's in Your Wallet? </h2>
-  <div class="field">
-    <%= f.label :down_so_long_it_looks_like_up_to_me %><br>
-    <%= f.radio_button( :budget, '9' ) %>
-  </div>
-  <div class="field">
-    <%= f.label :on_a_budget_but_do_ok_for_myself%><br>
-    <%= f.radio_button( :budget, '5' ) %>
-  </div>
-  <div class="field">
-    <%= f.label :bling_bling_mothafucka_im_on_a_boat%><br>
-    <%= f.radio_button( :budget, '3' ) %>
-  </div>
-  <h2 class="survey">How Edgy Are You When it Comes to Safety</h2>
-  <div class="field">
-    <%= f.label :i_fear_dust_bunnies %><br>
-    <%= f.radio_button( :safety, '9' ) %>
-  </div>
-  <div class="field">
-    <%= f.label "I’m safety-conscious, but not paranoid like the first guy." %><br>
-    <%= f.radio_button( :safety, '5' ) %>
-  </div>
-  <div class="field">
-    <%= f.label "Don’t care, I’m a badass." %><br>
-    <%= f.radio_button( :safety, '3' ) %>
-  </div>
-  <h2 class="survey">Where would you rather be on any given Saturday?</h2>
-  <div class="field">
-    <%= f.label "Taking an awesome hike in the wilderness" %><br>
-    <%= f.radio_button( :recreation, '9' ) %>
-  </div>
-  <div class="field">
-    <%= f.label "Attending a lecture, seminar, talk, or class." %><br>
-    <%= f.radio_button( :recreation, '5' ) %>
-  </div>
-  <div class="field">
-    <%= f.label "Enjoying the theater or music scene." %><br>
-    <%= f.radio_button( :recreation, '3' ) %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
+  </ul>
+</div>
+  <% end %>
+<div class="row">
+  <div class="small-6 small-centered columns">
+    <h2 class="survey">Do You Like Your Weather...</h2>
+    <div class="field question">
+      <%= f.radio_button( :weather, '9'  ) %>
+      <%= f.label :moderate_weather%><br>
+    </div>
+    <div class="field question">
+      <%= f.radio_button( :weather, '5'  ) %>
+      <%= f.label :hot_weather%><br>
+    </div>
+    <div class="field question">
+      <%= f.radio_button( :weather, '3'  ) %>
+      <%= f.label :cold_weather %><br>
+    </div>
+    <h2 class="survey"> What's in Your Wallet? </h2>
+    <div class="field question">
+      <%= f.radio_button( :budget, '9' ) %>
+      <%= f.label :down_so_long_it_looks_like_up_to_me %><br>
+    </div>
+    <div class="field question">
+      <%= f.radio_button( :budget, '5' ) %>
+      <%= f.label :on_a_budget_but_do_ok_for_myself%><br>
+    </div>
+    <div class="field question">
+      <%= f.radio_button( :budget, '3' ) %>
+      <%= f.label :bling_bling_mothafucka_im_on_a_boat%><br>
+    </div>
+    <h2 class="survey">How Edgy Are You When it Comes to Safety</h2>
+    <div class="field question">
+      <%= f.radio_button( :safety, '9' ) %>
+      <%= f.label :i_fear_dust_bunnies %><br>
+    </div>
+    <div class="field question">
+      <%= f.radio_button( :safety, '5' ) %>
+      <%= f.label "I’m safety-conscious, but not paranoid like the first guy." %><br>
+    </div>
+   <div class="field question">
+      <%= f.radio_button( :safety, '3' ) %>
+      <%= f.label "Don’t care, I’m a badass." %><br>
+    </div>
+    <h2 class="survey">Where would you rather be on any given Saturday?</h2>
+    <div class="field question">
+      <%= f.radio_button( :recreation, '9' ) %>
+      <%= f.label "Taking an awesome hike in the wilderness" %><br>
+    </div>
+    <div class="field question" >
+      <%= f.radio_button( :recreation, '5' ) %>
+      <%= f.label "Attending a lecture, seminar, talk, or class." %><br>
+    </div>
+    <div class="field question">
+      <%= f.radio_button( :recreation, '3' ) %>
+      <%= f.label "Enjoying the theater or music scene." %><br>
+    </div>
+    <div class="actions small-centered survey_action">
+      <%= f.submit  id: "submit_survey"%>
+    </div>
   </div>
 </div>
-<% end %>
+  </div>
+    <% end %>

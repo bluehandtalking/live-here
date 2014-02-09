@@ -1,17 +1,23 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @city.name %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @city.rating %>
-  <%= image_tag @city.image %>
-  <%= @city.description %>
-</p>
-
-<p>
+<div class="row">
+  <div class="small-6 small-centered columns">
+    <h1>
+      <%= @city.name %>
+    </h1>
+  </div>
+</div>
+<div class="row">
+  <div class="small-6 small-centered  columns">
+    <%= image_tag @city.image , size: "900x420"%>
+  </div>
+</div>
+<div class="row">
+  <div class="small-6 small-centered columns">
+    <p class="city_description">
+    <%= @city.description %>
+    </p>
+  </div>
+</div>
 <%= link_to 'Edit', edit_city_path(@city) %> |
 <%= link_to 'Back', cities_path %>
