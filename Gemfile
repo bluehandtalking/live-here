@@ -30,6 +30,7 @@ group :test do
   gem 'debugger', "1.6.5"
   gem 'pry-rescue'
   gem 'pry-debugger', github: 'nixme/pry-debugger'
+  gem 'pry-theme', github:  'kyrylo/pry-theme'
 
   # gem 'guard'
   # gem 'guard-rspec'

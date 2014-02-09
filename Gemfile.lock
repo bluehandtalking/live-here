@@ -14,6 +14,14 @@ GIT
       sass (>= 3.2.0)
 
 GIT
+  remote: git://github.com/kyrylo/pry-theme.git
+  revision: ab5a11234fe6598b3eb064183e5661bbeefeb111
+  specs:
+    pry-theme (1.0.2)
+      coderay (~> 1.1)
+      json (~> 1.8)
+
+GIT
   remote: git://github.com/nixme/pry-debugger.git
   revision: 4cd384a7d69a10f0f8fe5a8700e5a33ed7464b73
   specs:
@@ -228,6 +236,7 @@ DEPENDENCIES
   pry-debugger!
   pry-rails
   pry-rescue
+  pry-theme!
   rails (= 4.0.2)
   sass-rails (~> 4.0.0)
   sdoc
