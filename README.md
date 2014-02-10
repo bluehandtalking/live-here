@@ -1,4 +1,4 @@
-![:live_here_header]("https://github.com/bluehandtalking/live-here/blob/master/app/assets/images/live-here_entry.png")
+![:live_here_header](app/assets/images/live-here_entry.png)
 
 Live Here
 =========
