@@ -5,8 +5,6 @@ LiveHere::Application.routes.draw do
 
   resources :cities
 
-  resources :surveys
-
   devise_for :users
   devise_for :admins
   root to: 'welcome#index'

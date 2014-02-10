@@ -77,12 +77,6 @@ ActiveRecord::Schema.define(version: 20140208190411) do
 
   add_index "questions", ["topic_id"], name: "index_questions_on_topic_id"
 
-  create_table "surveys", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "topics", force: true do |t|
     t.text     "description"
     t.integer  "survey_id"
