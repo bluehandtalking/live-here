@@ -1,28 +1,13 @@
-== README
+![:live_here_header](https://github.com/bluehandtalking/live-here/blob/master/app/assets/images/live-here_entry.png)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Live Here
+=========
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby 2.1.0, Rails 4.0.2
+* Test requires minitest-rails, minitest-rails-capybara, capybara-webkit
+* Test data generated from DB with seed_dump
+* Using Sqlite3 DB
+* rake db
+* Test suite has rake task in lib, so just run 'rake' to run tests
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
